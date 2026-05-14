@@ -48,6 +48,29 @@ members.</p>
 <h5>Description, <span class="w3-opacity">2024
 </span></h5>
 </div>
+<hr>
+
+<!-- Members -->
+<div class="w3-card-4 w3-margin w3-white">
+<div class="w3-container">
+<h3><b>Project Members</b></h3>
+</div>
+
+<div class="w3-container">
+<table>
+<tr>
+<th>Member </th>
+<th>Description</th>
+</tr>
+<tr>
+{% for x in obj %}
+<td>{{x.name}}</td>
+<td>{{x.description}}</td>
+</tr>
+{% endfor %}
+</table>
+</div>
+</div>
 
 <div class="w3-container">
 <p>Briefly describe the problem addressed by your project.</p>
@@ -127,4 +150,3 @@ class="w3-tag w3-light-grey w3-small w3-margin-bottom">Tag12</span>
 <p>Copyright 2024 <a href="#">Ma. Theresa M. Aguilar</a></p>
 </footer>
 </body>
-
